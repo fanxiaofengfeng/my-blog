@@ -42,7 +42,7 @@ jobs:
           # 指定上传的文件目录(项目配置的打包目录名称)
 
           source: 'src/.vuepress/dist' # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
-          target: ${{ secrets.SERVER_SSH_TARGET }} # 目标目录
+          target: '/home/lighthouse/my-blog' # 目标目录
           # 解压时覆盖现有文件
           overwrite: true
           # 删除指定数量的前导路径元素
