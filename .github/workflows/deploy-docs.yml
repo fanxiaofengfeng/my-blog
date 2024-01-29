@@ -19,20 +19,20 @@ jobs:
 
       - name: 安装依赖
         run: |
-          npm install
+          pnpm install
           # 或者使用 pnpm，具体取决于你的项目配置
           # pnpm install
-      - name: 构建静态网站
-        working-directory: /home/lighthouse/my-blog
-        run: |
-          pnpm run build
-      - name: 安装腾讯云cloudbase命令行
-        shell: bash
-        run: npm i -g @cloudbase/cli
 
-      - name: 将我们的静态页面发布到腾讯云的静态网站托管里面。
-        working-directory: /home/lighthouse/my-blog
-        shell: bash
+      - name: 构建静态网站
         run: |
-          tcb login --apiKeyId ${{ secrets.QCLOUDAPIKEYID }} --apiKey ${{ secrets.QCLOUDAPIKEY }}
-          tcb hosting deploy ./ -e ${{ secrets.QCLOUDENVID }}
+          pnpm docs:build
+
+      # 部署到腾讯云服务器
+      - name: Upload files to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SERVER_SSH_HOST }} # 服务器域名
+          username: ${{ secrets.SERVER_SSH_USER }} # 腾讯云默认用户名为root
+          key: ${{ secrets.SERVER_SSH_KEY }} # 本地.ssh文件下的私钥id_rsa，存在secrets中
+          source: 'src/.vuepress/dist' # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
+          target: ${{ secrets.SERVER_SSH_TARGET }} # 目标目录
