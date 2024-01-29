@@ -39,10 +39,13 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           # 服务器用户名
           username: ${{ secrets.SERVER_USERNAME }}
+
+          key: ${{ secrets.SERVER_SSH_KEY }} # 本地.ssh文件下的私钥id_rsa，存在secrets中
+
           # 服务器密码
-          password: ${{ secrets.SERVER_PASSWORD }}
+#          password: ${{ secrets.SERVER_PASSWORD }}
           # 服务器端口
-          port: ${{ secrets.SERVER_PORT }}
+#          port: ${{ secrets.SERVER_PORT }}
           # 指定上传的文件目录(项目配置的打包目录名称)
           source: 'src/.vuepress/dist' # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
           target: '/home/lighthouse/my-blog' # 目标目录
