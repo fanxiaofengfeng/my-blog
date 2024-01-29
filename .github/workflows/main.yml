@@ -51,8 +51,7 @@ jobs:
 #          strip_components: 1
       - name: 构建静态网站
         run: |
-          rm -r /home/lighthouse/my-blog/src/.vuepress/dist
-          mv /home/lighthouse/my/src/.vuepress/dist /home/lighthouse/my-blog/src/.vuepress/
+          mv -f /home/lighthouse/my/src/.vuepress/dist /home/lighthouse/my-blog/src/.vuepress/
           rm -r /home/lighthouse/my
 
 
