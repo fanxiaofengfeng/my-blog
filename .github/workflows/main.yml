@@ -12,10 +12,10 @@ jobs:
       # 官方action, 将代码拉取到虚拟机
       - name: Checkout
         uses: actions/checkout@v3
-#      - name: 配置 Node.js
-#        uses: actions/setup-node@v3
-#        with:
-#          node-version: 'v18.19.0'
+      - name: 配置 Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'v18.19.0'
 #
 #      - name: 安装依赖
 #        run: |
