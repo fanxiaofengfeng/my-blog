@@ -7,13 +7,11 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: CentOS 7.6 64bit
+    runs-on: ubuntu-latest
     steps:
       # 官方action, 将代码拉取到虚拟机
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 #      - name: 配置 Node.js
 #        uses: actions/setup-node@v3
 #        with:
