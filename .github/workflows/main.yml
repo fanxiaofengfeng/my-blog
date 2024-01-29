@@ -26,11 +26,11 @@ jobs:
       - name: 构建静态网站
         run: |
           pnpm docs:build
-      - name: Set LANG environment variable
-        run: export LANG=C.UTF-8
-      - name: Set LC_TIME environment variable
-        run: export LC_TIME=C.UTF-8
-
+      - name: Set Locale environment variables
+        run: |
+          export LANG=C.UTF-8
+          export LC_ALL=C.UTF-8
+          export LC_TIME=C.UTF-8
       # 部署到腾讯云服务器
       - name: Upload files to server
         uses: appleboy/scp-action@master
@@ -40,12 +40,12 @@ jobs:
           # 服务器用户名
           username: ${{ secrets.SERVER_USERNAME }}
 
-          key: ${{ secrets.SERVER_SSH_KEY }} # 本地.ssh文件下的私钥id_rsa，存在secrets中
+          #key: ${{ secrets.SERVER_SSH_KEY }} # 本地.ssh文件下的私钥id_rsa，存在secrets中
 
           # 服务器密码
-#          password: ${{ secrets.SERVER_PASSWORD }}
+          password: ${{ secrets.SERVER_PASSWORD }}
           # 服务器端口
-#          port: ${{ secrets.SERVER_PORT }}
+          port: ${{ secrets.SERVER_PORT }}
           # 指定上传的文件目录(项目配置的打包目录名称)
           source: 'src/.vuepress/dist' # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
           target: '/home/lighthouse/my-blog' # 目标目录
