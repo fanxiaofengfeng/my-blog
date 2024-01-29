@@ -28,7 +28,10 @@ jobs:
           pnpm docs:build
       - name: Set LANG environment variable
         run: export LANG=C.UTF-8
-    # 部署到腾讯云服务器
+      - name: Set LC_TIME environment variable
+        run: export LC_TIME=C.UTF-8
+
+      # 部署到腾讯云服务器
       - name: Upload files to server
         uses: appleboy/scp-action@master
         with:
