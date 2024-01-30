@@ -1,14 +1,14 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
-  "/",
+  "/", //首页路径
   {
     text: "博文",
     icon: "pen-to-square",
     prefix: "/posts/",
     children: [
       {
-        text: "苹果",
+        text: "spring",
         icon: "pen-to-square",
         prefix: "spring/",
         children: [
@@ -44,7 +44,7 @@ export default navbar([
     ],
   },
   {
-    text: "V2 文档",
+    text: "文档",
     icon: "book",
     link: "https://theme-hope.vuejs.press/zh/",
   },
