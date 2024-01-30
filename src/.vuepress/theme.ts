@@ -4,6 +4,7 @@ import sidebar from "./sidebar.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
+  locales: undefined,
   hostname: "https://mister-hope.github.io",
 
   author: {
