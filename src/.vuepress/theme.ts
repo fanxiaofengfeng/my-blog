@@ -30,7 +30,7 @@ export default hopeTheme({
   displayFooter: true,
 
   blog: {
-    description: "一个前端开发者",
+    description: "一个后端开发者",
     intro: "/intro.html",
     medias: {
       Baidu: "https://example.com",
@@ -64,7 +64,7 @@ export default hopeTheme({
       Whatsapp: "https://example.com",
       Youtube: "https://example.com",
       Zhihu: "https://example.com",
-      MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
+      // MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
     },
   },
 
