@@ -28,7 +28,7 @@ jobs:
           pnpm docs:build
           ls
       # 部署到腾讯云服务器
-      - name: Upload files to server
+      - name: 部署到腾讯云服务器
         uses: appleboy/scp-action@master
         with:
           # 服务器域名
