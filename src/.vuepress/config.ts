@@ -3,6 +3,7 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/",
+  dest: 'dist',
 
   lang: "zh-CN",
   title: "梵梵爱学习",
