@@ -157,21 +157,21 @@ export default hopeTheme({
       // install @vue/repl before enabling it
       // vuePlayground: true,
     },
-    // searchPro: {
-    // //索引全部内容
-    //   indexContent: true,
-    //  // 为分类和标签添加索引
-    //  customField: [
-    //    {
-    //      getter: (page) => page.frontmatter.category,
-    //      formatter: "分类: $content",
-    //    },
-    //    {
-    //      getter: (page) => page.frontmatter.tag,
-    //      formatter: "标签: $content",
-    //    }
-    //  ]
-    // }
+    searchPro: {
+    //索引全部内容
+      indexContent: true,
+     // 为分类和标签添加索引
+     customField: [
+       {
+         getter: (page) => page.frontmatter.category,
+         formatter: "分类: $content",
+       },
+       {
+         getter: (page) => page.frontmatter.tag,
+         formatter: "标签: $content",
+       }
+     ]
+    }
     // uncomment these if you want a PWA
     // pwa: {
     //   favicon: "/favicon.ico",
