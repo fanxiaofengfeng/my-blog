@@ -5,7 +5,7 @@ icon: home
 title: 主页
 heroImage: /logo.svg
 bgImageDark: /logo2.png
-heroText: 梵梵宝藏网站
+heroText: 梵梵爱学习网站
 heroFullScreen: true
 tagline: 新年快乐
 # projects:
