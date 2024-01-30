@@ -9,15 +9,7 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "梵梵博客网站",
   description: "vuepress-theme-hope 的博客演示",
-
-  theme: hopeTheme({
-    plugins: {
-      search: true,
-      // search: {
-      //   插件选项
-      // },
-    },
-  }),
+  theme,
   // Enable it with pwa
   // shouldPrefetch: false,
 });
