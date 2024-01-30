@@ -11,7 +11,7 @@ export default defineUserConfig({
   description: "vuepress-theme-hope 的博客演示",
 
   theme: hopeTheme({
-    darkmode: "enable"
+    darkmode: "switch"
   }),
   // Enable it with pwa
   // shouldPrefetch: false,
