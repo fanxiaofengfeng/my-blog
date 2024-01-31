@@ -46,15 +46,8 @@ export default navbar([
   {
     text: "spring系列",
     icon: "book",
-    prefix: "/posts/",
+    prefix: "/posts/spring",
     children: [
-      {
-        text: "spring",
-        icon: "pen-to-square",
-        prefix: "spring/",
-        children: [
-        ],
-      },
     ],
   },
   {
