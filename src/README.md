@@ -4,7 +4,7 @@ layout: BlogHome
 icon: home
 title: 主页
 heroImage: /logo.svg
-bgImage: src/.vuepress/public/assets/bg.webp
+bgImage: src/.vuepress/public/assets/bg.png
 bgImageDark: /logo2.png
 heroText: 梵梵博客网站
 heroFullScreen: true
