@@ -21,7 +21,7 @@ export default navbar([
       {
         text: "香蕉",
         icon: "pen-to-square",
-        prefix: "banana/",
+        prefix: "资源/",
         children: [
           {
             text: "香蕉 1",
