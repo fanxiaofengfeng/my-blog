@@ -1,7 +1,12 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
-  "/", //首页路径
+  //"/", //首页路径
+  {
+    text: "主页",
+    icon: "iconfont icon-home",
+    link: "/",
+  },
   //"/posts/mysql", //mysql
   {
     text: "MySQL",
@@ -10,12 +15,12 @@ export default navbar([
   },
   {
     text: "博文",
-    icon: "pen-to-square",
+    icon: "iconfont icon-pen-to-square",
     prefix: "/posts/",
     children: [
       {
         text: "spring",
-        icon: "pen-to-square",
+        icon: "iconfont icon-pen-to-square",
         prefix: "spring/",
         children: [
           { text: "苹果1", icon: "pen-to-square", link: "1" },
@@ -52,14 +57,14 @@ export default navbar([
 
   {
     text: "spring系列",
-    icon: "book",
+    icon: "iconfont icon-book",
     prefix: "/posts/spring",
     children: [
     ],
   },
   {
     text: "文档",
-    icon: "book",
+    icon: "iconfont icon-book",
     link: "https://theme-hope.vuejs.press/zh/",
   },
 ]);
