@@ -1,7 +1,7 @@
 ---
 title: Mysql
 index: false
-icon: iconfont icon-mysql
+icon: mysql
 category:
   - mysql
 ---

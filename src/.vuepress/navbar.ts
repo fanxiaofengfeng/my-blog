@@ -4,23 +4,23 @@ export default navbar([
   //"/", //首页路径
   {
     text: "主页",
-    icon: "iconfont icon-home",
+    icon: "home",
     link: "/",
   },
   //"/posts/mysql", //mysql
   {
     text: "MySQL",
-    icon: "iconfont icon-mysql",
+    icon: "mysql",
     link: "/posts/mysql",
   },
   {
     text: "博文",
-    icon: "iconfont icon-pen-to-square",
+    icon: "pen-to-square",
     prefix: "/posts/",
     children: [
       {
         text: "spring",
-        icon: "iconfont icon-pen-to-square",
+        icon: "pen-to-square",
         prefix: "spring/",
         children: [
           { text: "苹果1", icon: "pen-to-square", link: "1" },
@@ -54,17 +54,16 @@ export default navbar([
       "strawberry",
     ],
   },
-
   {
     text: "spring系列",
-    icon: "iconfont icon-book",
+    icon: "book",
     prefix: "/posts/spring",
     children: [
     ],
   },
   {
     text: "文档",
-    icon: "iconfont icon-book",
+    icon: "book",
     link: "https://theme-hope.vuejs.press/zh/",
   },
 ]);

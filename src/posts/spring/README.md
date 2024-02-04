@@ -1,7 +1,7 @@
 ---
 home: false
 layout: BlogHome
-icon: iconfont icon-java
+icon: java
 title: spring
 heroImage: /logo.svg
 bgImage: /bg.png
