@@ -1,9 +1,9 @@
 ---
-title: 主要功能与配置演示
+title: Mysql
 index: false
-icon: laptop-code
+icon: mysql
 category:
-  - 使用指南
+  - mysql
 ---
 
 <AutoCatalog />
