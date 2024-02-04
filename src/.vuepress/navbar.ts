@@ -5,7 +5,7 @@ export default navbar([
   //"/posts/mysql", //mysql
   {
     text: "MySQL",
-    icon: "mysql",
+    icon: "iconfont icon-mysql",
     link: "/posts/mysql",
   },
   {
