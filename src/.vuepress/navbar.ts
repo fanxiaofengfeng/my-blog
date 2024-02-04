@@ -2,7 +2,12 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/", //首页路径
-  "/posts/mysql", //mysql
+  //"/posts/mysql", //mysql
+  {
+    text: "MySQL",
+    icon: "mysql",
+    link: "/posts/mysql",
+  },
   {
     text: "博文",
     icon: "pen-to-square",
