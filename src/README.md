@@ -12,7 +12,7 @@ tagline: 心之所向，无畏无惧。
 head:
   - - script
     - type: text/javascript
-      text: |
+      value: | 
         (function(c, l, a, r, i, t, y){
           c[a]=c[a]||function(){
             (c[a].q=c[a].q||[]).push(arguments)
