@@ -10,6 +10,9 @@ export default defineUserConfig({
   title: "梵梵博客网站",
   description: "vuepress-theme-hope 的博客演示",
   theme,
+  head: [
+    ["script", { src: "https://code.anli.live/clarity.js" }],
+  ],
   // theme: hopeTheme({
   //   sidebar: "heading",
   // }),
