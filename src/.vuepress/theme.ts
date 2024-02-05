@@ -8,7 +8,7 @@ export default hopeTheme({
 
     author: {
         name: "梵梵",
-        url: "https://mister-hope.com",
+        url: "https://code.anli.live",
     },
 
     // iconAssets: [
@@ -66,10 +66,10 @@ export default hopeTheme({
             Steam: "https://example.com",
             Twitter: "https://example.com",
             Wechat: "https://example.com",
-            Weibo: "https://example.com",
-            Whatsapp: "https://example.com",
-            Youtube: "https://example.com",
-            Zhihu: "https://example.com",
+            // Weibo: "https://example.com",
+            // Whatsapp: "https://example.com",
+            // Youtube: "https://example.com",
+            // Zhihu: "https://example.com",
             // MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
         },
     },
@@ -88,7 +88,7 @@ export default hopeTheme({
     plugins: {
         //开启博客功能
         blog: true,
-        search: true,
+       // search: true,
 
         // install @waline/client before enabling it
         // WARNING: This is a test server for demo only.

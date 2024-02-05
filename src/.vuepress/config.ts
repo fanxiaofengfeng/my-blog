@@ -1,12 +1,21 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import {hopeTheme} from "vuepress-theme-hope";
+// @ts-ignore
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
   base: "/",
   dest: 'dist',
-
-  lang: "zh-CN",
+  locales: {
+    "/": {
+      lang: "en-US",
+    },
+    "/zh/": {
+      lang: "zh-CN",
+    },
+  },
+  // lang: "zh-CN",
   title: "梵梵博客网站",
   description: "vuepress-theme-hope 的博客演示",
   theme,
@@ -28,4 +37,32 @@ export default defineUserConfig({
   // }),
   // Enable it with pwa
   // shouldPrefetch: false,
+  plugins: [
+    searchProPlugin({
+      customFields: [
+        {
+          getter: (page) => page.frontmatter.category,
+          formatter: {
+            "/": "Category: $content",
+            "/zh/": "分类：$content",
+          },
+        },
+        {
+          getter: (page) => page.frontmatter.tag,
+          formatter: {
+            "/": "Tag: $content",
+            "/zh/": "标签：$content",
+          },
+        },
+        {
+          name: "updateTime",
+          getter: (page) => page.data.git?.updateTime.toLocaleString(),
+          formatter: {
+            "/": "Update time: $content",
+            "/zh/": "更新时间：$content",
+          },
+        },
+      ],
+    }),
+  ],
 });
