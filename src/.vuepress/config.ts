@@ -11,7 +11,6 @@ export default defineUserConfig({
   description: "vuepress-theme-hope 的博客演示",
   theme,
   head: [
-    // ["script", { src: "https://code.anli.live/clarity.js" }],
     [
       "script",
       {type:"text/javascript"},
