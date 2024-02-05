@@ -9,10 +9,6 @@ bgImageDark: /logo2.png
 heroText: 梵梵博客网站
 heroFullScreen: true
 tagline: 心之所向，无畏无惧。
-head:
-  - script:
-    type: text/javascript
-    src: 'https://code.anli.live/clarity.js'
        
 # projects:
 #   - icon: project
