@@ -2,6 +2,7 @@ import {hopeTheme} from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 import {MR_HOPE_AVATAR} from "./logo.js";
+import {SearchProOptions} from "vuepress-plugin-search-pro";
 
 export default hopeTheme({
     hostname: "https://code.anli.live",
@@ -10,6 +11,7 @@ export default hopeTheme({
         name: "梵梵",
         url: "https://code.anli.live",
     },
+
 
     // iconAssets: [
     //     "iconfont",
@@ -86,6 +88,26 @@ export default hopeTheme({
     },
 
     plugins: {
+        searchPro: {
+            indexContent: true,
+            autoSuggestions: true,
+            customFields: [
+                {
+                    getter: (page) => page.frontmatter.description,
+                    formatter: {
+                        "/": "Category: $content",
+                        "/zh/": "分类：$content",
+                    },
+                },
+                {
+                    getter: (page) => page.frontmatter.title,
+                    formatter: {
+                        "/": "Tag: $content",
+                        "/zh/": "标签：$content",
+                    },
+                },
+            ],
+        },
         //开启博客功能
         blog: true,
        // search: true,
@@ -162,22 +184,8 @@ export default hopeTheme({
 
             // install @vue/repl before enabling it
             // vuePlayground: true,
-        },
-        searchPro: {
-            //索引全部内容
-            indexContent: true,
-            // 为分类和标签添加索引
-            customField: [
-                {
-                    getter: (page) => page.frontmatter.category,
-                    formatter: "分类: $content",
-                },
-                {
-                    getter: (page) => page.frontmatter.tag,
-                    formatter: "标签: $content",
-                }
-            ]
         }
+
         // uncomment these if you want a PWA
         // pwa: {
         //   favicon: "/favicon.ico",

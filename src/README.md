@@ -6,9 +6,9 @@ title: 主页
 heroImage: /logo.svg
 bgImage: /bg.png
 bgImageDark: /logo2.png
-heroText: 梵梵博客网站
+heroText: 晓峰博客
 heroFullScreen: true
-tagline: 心之所向，无畏无惧。
+tagline: 我想离开浪浪山，是不是该出去闯闯
 # projects:
 #   - icon: project
 #     name: 项目名称
