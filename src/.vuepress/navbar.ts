@@ -18,12 +18,9 @@ export default navbar([
     link: "/post/mongodb"
   },
   {
-    text: "spring系列",
+    text: "Spring系列",
     icon: "book",
-    prefix: "/posts/spring",
-    children: [
-    ],
-
-  },
+    link: "/post/spring"
+  }
 
 ]);
