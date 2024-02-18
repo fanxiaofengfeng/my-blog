@@ -8,7 +8,7 @@ export default hopeTheme({
     hostname: "https://code.anli.live",
 
     author: {
-        name: "梵梵",
+        name: "晓峰",
         url: "https://code.anli.live",
     },
 

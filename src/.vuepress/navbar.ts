@@ -10,7 +10,7 @@ export default navbar([
   {
     text: "Java系列",
     icon: "book",
-    link: "/post/spring"
+    link: "/post"
   },
   {
     text: "MySQL",
