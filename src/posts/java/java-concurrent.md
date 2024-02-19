@@ -107,3 +107,5 @@ Exception in thread "main" java.util.concurrent.RejectedExecutionException: Task
 
    *刚开始都是在创建新的线程，达到核心线程数量5个后,新的任务进来后不再创建新的线程，而是将任务加入工作队列，工作队列到达上限5个后，新的任务又会创建新的普通线程，直到达到线程池最大的线程数量10个,后面的任务则根据配置的饱和策略来处理。我们这里没有具体配置，使用的是默认的配置AbortPolicy:直接抛出异常。*
 
+## 
+

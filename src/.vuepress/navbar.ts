@@ -10,7 +10,7 @@ export default navbar([
   {
     text: "Java系列",
     icon: "book",
-    link: "/post"
+    link: "/post/java"
   },
   {
     text: "MySQL",
@@ -26,5 +26,10 @@ export default navbar([
     text: "Spring系列",
     icon: "book",
     link: "/post/spring"
+  },
+  {
+    text: "踩坑系列",
+    icon: "book",
+    link: "/post/bug"
   }
 ]);
