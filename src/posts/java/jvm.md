@@ -74,9 +74,9 @@ WeakReference<Object> weakRef = new WeakReference<>(new Object());
 PhantomReference<Object> phantomRef = new PhantomReference<>(new Object(), referenceQueue);
 ```
 ##虚拟机类加载机制
-### 简述java类加载机制
-### 描述一下JVM加载Class文件的原理机制
-### 什么是类加载，类加载器有哪些
+## 简述java类加载机制
+## 描述一下JVM加载Class文件的原理机制
+## 什么是类加载，类加载器有哪些
 
 
 
