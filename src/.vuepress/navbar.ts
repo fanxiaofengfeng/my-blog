@@ -19,7 +19,7 @@ export default navbar([
   },
   {
     text: "MongoDB",
-    icon: "pen-to-square",
+    icon: "book",
     link: "/posts/mongodb"
   },
   {
