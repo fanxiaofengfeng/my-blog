@@ -25,12 +25,6 @@ MongoDB提供了以下插入方法[文件](https://www.mongodb.com/docs/v4.4/cor
 
 ### 查询文档
 
-![在这里插入图片描述](assets/fe3db32cb2e64ab9889cd3ed5d5137a5-1704246654171-8.png)
-
-![在这里插入图片描述](assets/8de55df8a2b340a399c1cea2300f06b8.png)
-
-![在这里插入图片描述](assets/8de55df8a2b340a399c1cea2300f06b8-1704246687456-13.png)
-
 ### 查询语法举例
 
 ```java
