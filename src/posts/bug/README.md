@@ -1,5 +1,5 @@
 ---
-title: Bug1
+title: 踩坑
 index: false
 icon: Bug12
 category:
