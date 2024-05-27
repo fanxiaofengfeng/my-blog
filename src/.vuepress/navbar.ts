@@ -30,6 +30,6 @@ export default navbar([
   {
     text: "踩坑系列",
     icon: "book",
-    link: "/post/bug"
+    link: "/posts/bug"
   }
 ]);
