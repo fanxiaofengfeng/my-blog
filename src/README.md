@@ -8,7 +8,7 @@ bgImage: /bg.png
 bgImageDark: /logo2.png
 heroText: 晓峰博客
 heroFullScreen: true
-tagline: 我想离开浪浪山，是不是该出去闯闯
+tagline: 我想离开浪浪山，是不是该出去闯闯？闯个鸡儿，回家混吃等死！
 # projects:
 #   - icon: project
 #     name: 项目名称
