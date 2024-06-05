@@ -43,4 +43,4 @@ db.books.insertMany(books);
 ```
 ## 效果：
 
-![mongo_js批量新增测试数据.png](C:\IdeaProject\my-blog\src\posts\mongodb\mongoUseJsData.png)
+![mongo_js批量新增测试数据.png](mongoUseJsData.png)
