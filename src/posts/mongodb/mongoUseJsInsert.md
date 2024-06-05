@@ -42,4 +42,5 @@ for (var i = 0; i < 50; i++) {
 db.books.insertMany(books);
 ```
 ## 效果：
-![mongo_js批量新增测试数据.png](mongo_js%C5%FA%C1%BF%D0%C2%D4%F6%B2%E2%CA%D4%CA%FD%BE%DD.png)
+
+![mongo_js批量新增测试数据.png](C:\IdeaProject\my-blog\src\posts\mongodb\mongoUseJsData.png)
