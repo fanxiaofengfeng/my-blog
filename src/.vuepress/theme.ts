@@ -19,7 +19,7 @@ export default hopeTheme({
     //     "fontawesome",
     //     "fontawesome-with-brands"
     // ],
-    iconAssets: "iconfont",
+    iconAssets: "iconify",
 
     logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
